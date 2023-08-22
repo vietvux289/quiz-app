@@ -1,0 +1,246 @@
+/* RESET CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Proxima Nova", "Helvetica", "Arial", sans-serif;
+  font-size: 18px;
+  color: #222222;
+}
+
+/* GRID LAYOUT */
+.grid {
+  width: 700px;
+  margin: auto;
+}
+
+/* HEADER */
+.header-container {
+  display: flex;
+  height: 80px;
+  border-bottom: #ccc 1px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Course name (WPR) */
+#course-name {
+  font-family: "Helvetica", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: #ee3322;
+}
+
+/* MERN Stack (Yellow circles) */
+.stack-circle {
+  display: inline-block;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  background-color: #ffee00;
+  border-radius: 100%;
+  line-height: 50px;
+  font-weight: bold;
+  transform: rotate(-30deg);
+}
+
+/* QUIZ NAME BOX*/
+#quiz-name {
+  display: flex;
+  background-image: url("./images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 425px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Quiz name (HTML QUIZ) */
+.quiz-name_text {
+  background-color: rgba(255, 255, 255, 0.9);
+  font-family: "Pangolin", "Trebuchet MS", cursive;
+  font-size: 60px;
+  color: black;
+  max-width: 75%;
+  padding: 10px;
+}
+
+/* INTRODUCTION */
+/* Author name (By Viet Vux) */
+#author {
+  font-size: 14px;
+  text-align: center;
+  margin: 18px 0;
+}
+
+/* Intro description */
+.introduction-heading,
+.introduction-text {
+  margin-bottom: 18px;
+}
+
+/* ATTEMPT QUIZ */
+.question-index {
+  margin: 30px 0;
+}
+
+.question-text {
+  margin-bottom: 30px;
+}
+
+/* List of options for choosing */
+.option-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.option {
+  background-color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 1px;
+  padding: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.radio-container {
+  margin-right: 15px;
+}
+
+/* Un-selected option */
+.option:hover {
+  background: #ddd;
+}
+
+.option-selected {
+  background: #ddd;
+}
+
+/* Selected option */
+/* .option:focus-within {
+  background-color: #ddd;
+} */
+
+/* REVIEW THE RESULT'S QUIZ */
+.answer-status {
+  display: inline-block;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.2);
+  right: 10px;
+  position: absolute;
+}
+
+/* Correct answers */
+.correct-answer {
+  background: #d4edda;
+}
+
+.option-correct {
+  background: #ddd;
+}
+
+/* Wrong answer */
+.wrong-answer {
+  background: #f8d7da;
+}
+
+/* Disable re-select mode when reviewing */
+input[type="radio"]:disabled+.answer-status {
+  pointer-events: none;
+}
+
+/* ALL BOXES */
+.boxes {
+  border: #dcdcdc 1px solid;
+  background-color: #f1f1f1;
+  margin: 30px 0;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Box - START the quiz */
+.box-start_heading {
+  margin-bottom: 18px;
+}
+
+/* Good luck! */
+.box-start_wishing {
+  margin-bottom: 18px;
+}
+
+/* Box - REVIEW the results */
+.result-title,
+.result-score {
+  margin-bottom: 18px;
+}
+
+.result-feedback {
+  margin: 18px 0;
+}
+
+.result-score {
+  font-size: 24px;
+}
+
+.result-percentage {
+  font-weight: bold;
+}
+
+/* ALL BUTTONS */
+.buttons {
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  padding: 18px;
+}
+
+/* BLUE buttons */
+.btn_blue {
+  margin-top: 18px;
+  background-color: #2196f3;
+}
+
+/* when users move the mouse over the blue buttons */
+.btn_blue:hover {
+  background-color: #0d8bf2;
+}
+
+/* GREEN button */
+.btn_green {
+  background-color: #4caf50;
+}
+
+/* When users move the mouse over the green button*/
+.btn_green:hover {
+  background-color: #46a049;
+}
+
+/* HIDE SCREEN 2 & SCREEN 3 */
+.hidden {
+  display: none !important;
+}
+
+/* RESPONSIVE LAYOUT */
+/* screen is less than 700px wide */
+@media (max-width: 699px) {
+  .grid {
+    width: 95%;
+  }
+}
+
+/* Screen is less than 500px wide */
+@media (max-width: 499px) {
+  .mern-stacks {
+    display: none;
+  }
+}
