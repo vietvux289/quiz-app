@@ -1,5 +1,5 @@
 //define the API endpoint for the quiz app
-const API = "https://quiz-app-api-opyv.onrender.com";
+const API = "https://quiz-app-server-riry.onrender.com";
 
 //select DOM elements
 const intro = document.querySelector("#introduction");
